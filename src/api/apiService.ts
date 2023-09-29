@@ -1,10 +1,5 @@
 import countries from './countries.json';
-
-export interface CountryInfo {
-  name: string;
-  fullName: string;
-  flag: string;
-}
+import {CountryInfo} from '../build/types/config';
 
 export function getCountryByName(countryName: string): Promise<CountryInfo[]> {
     return new Promise((resolve) => {
