@@ -1,0 +1,25 @@
+.Button {
+  margin: 0 5px;
+  color: #fff;
+  text-shadow: 0 -1px rgba(0, 0, 0, .5);
+  padding: .7em 1.5em;
+  border: 0;
+  border-radius: 5px;
+  background: red;
+  box-shadow: 0 6px darken(red, 10%);
+  transition: .2s;
+
+  &:hover {
+    background: darken(red, 5%);
+  }
+
+  &:active {
+    background: darken(red, 10%);
+    box-shadow: 0 2px darken(red, 15%),
+    0 1px 6px rgba(0, 0, 0, .4),
+    inset 0 1px rgba(255, 255, 255, .3),
+    inset 0 0 3px rgba(255, 255, 255, .5);
+    -webkit-transform: translate(0, 4px);
+    transform: translate(0, 4px);
+  }
+}
